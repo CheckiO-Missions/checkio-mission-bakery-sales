@@ -11,8 +11,8 @@ api.add_listener(
         tests=TESTS,
         # checker=to_list,
         function_name={
-            "python": "sum_two",
-            "js": "sumTwo"
+            "python": "bakery_sales",
+            "js": "bakerySales"
         },
         cover_code={
             'python-3': {},

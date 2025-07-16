@@ -1,22 +1,29 @@
 <!-- Describe task in general -->
 <!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
 <p style="text-align: justify;">
-    Sum two passed ints
+    A bakery sells wholemeal breads, sweets and cakes. To encourage sales, the director announced prizes based on the number of products sold during the week, following a point system: each loaf of bread (<code>b</code>) is worth 1 point, each sweets pack (<code>s</code>) is worth 2 points and each cake (<code>c</code>) is worth 3 points. Depending on the total points accumulated, employees may receive a different reward. The challenge is to create a program that determines which award employees will receive based on the quantity of each product sold.
+</p>
+
+<p style="text-align: justify;">
+    If the sum of the points of all products sold in the week is equal to or greater than 150, each employee receives a cake (<code>"C"</code>) as a prize; otherwise, if the sum of the points is greater than or equal to 120, each employee receives a sweets pack (<code>"S"</code>) as a prize; otherwise, if the sum of the points is greater than or equal to 100, each employee receives a loaf of bread (<code>"B"</code>) as a prize. If the sum of the points is less than 100, there is no award (<code>"N"</code>) for the employees.
 </p>
 
 <p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    <img  title="example" src="{{MEDIA}}bakery-sales.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    The challenge is to create a program that determines which award employees will receive based on the quantity of each product sold.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> Three integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span> representing, respectively, the number of breads, sweets packs and cakes sold in the week.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> String <span translate="no">(str{% if is_js %}ing{% endif %})</span> containing a character representing the prize. 
 </p>
-
 
 <p>
     <strong>Examples:</strong>
