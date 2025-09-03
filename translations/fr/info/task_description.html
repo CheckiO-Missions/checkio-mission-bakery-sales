@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    Une boulangerie vend des pains complets, des bonbons et des gâteaux. Pour encourager les ventes, le directeur a annoncé des prix basés sur le nombre de produits vendus au cours de la semaine, selon un système de points: chaque pain (<code>b</code>) vaut 1 point, chaque paquet de bonbons (<code>s</code>) vaut 2 points et chaque gâteau (<code>c</code>) vaut 3 points. En fonction du nombre total de points accumulés, les employés peuvent recevoir une récompense différente. Le défi consiste à créer un programme qui détermine la récompense que les employés recevront en fonction de la quantité de chaque produit vendu.
+</p>
+
+<p style="text-align: justify;">
+    Si la somme des points de tous les produits vendus au cours de la semaine est supérieure ou égale à 150, chaque employé reçoit un gâteau (<code>"C"</code>) comme prix; sinon, si la somme des points est supérieure ou égale à 120, chaque employé reçoit un paquet de bonbons (<code>"S"</code>) comme prix; sinon, si la somme des points est supérieure ou égale à 100, chaque employé reçoit une miche de pain (<code>"B"</code>) comme prix. Si la somme des points est inférieure à 100, il n'y a pas de récompense (<code>"N"</code>) pour les employés.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bakery-sales.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Le défi consiste à créer un programme qui détermine la récompense que les employés recevront en fonction de la quantité de chaque produit vendu.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Données d'entrée:</strong> Trois nombres entiers <span>({% if is_js %}number{% else %}int{% endif %})</span> représentant respectivement le nombre de pains, de paquets de bonbons et de gâteaux vendus au cours de la semaine.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span> contenant un caractère représentant le prix. 
+</p>
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
