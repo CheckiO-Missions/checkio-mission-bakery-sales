@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    Eine Bäckerei verkauft Vollkornbrot, Süßigkeiten und Kuchen. Um den Verkauf zu fördern, hat der Direktor Preise auf der Grundlage der Anzahl der in der Woche verkauften Produkte nach einem Punktesystem ausgeschrieben: Jeder Laib Brot (<code>b</code>) ist 1 Punkt wert, jede Packung Süßigkeiten (<code>s</code>) ist 2 Punkte wert und jeder Kuchen (<code>c</code>) ist 3 Punkte wert. Je nach der Gesamtzahl der gesammelten Punkte können die Mitarbeiter eine andere Belohnung erhalten. Die Herausforderung besteht darin, ein Programm zu erstellen, das anhand der Menge jedes verkauften Produkts festlegt, welche Prämie die Mitarbeiter erhalten.
+</p>
+
+<p style="text-align: justify;">
+    Wenn die Summe der Punkte aller in der Woche verkauften Produkte gleich oder größer als 150 ist, erhält jeder Mitarbeiter einen Kuchen (<code>"C"</code>) als Prämie; andernfalls, wenn die Summe der Punkte größer oder gleich 120 ist, erhält jeder Mitarbeiter ein Süßigkeitenpaket (<code>"S"</code>) als Prämie; andernfalls, wenn die Summe der Punkte größer oder gleich 100 ist, erhält jeder Mitarbeiter einen Laib Brot (<code>"B"</code>) als Prämie. Wenn die Summe der Punkte weniger als 100 beträgt, gibt es keine Prämie (<code>"N"</code>) für die Mitarbeiter.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bakery-sales.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Die Herausforderung besteht darin, ein Programm zu erstellen, das anhand der Menge der verkauften Produkte bestimmt, welche Prämie die Mitarbeiter erhalten.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span> die jeweils die Anzahl der in der Woche verkauften Brote, Süßigkeitenpackungen und Kuchen darstellen.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Zeichenkette <span>(str{% if is_js %}ing{% endif %})</span> mit einem Zeichen, das den Preis darstellt. 
+</p>
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
