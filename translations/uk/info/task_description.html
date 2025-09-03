@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    Пекарня продає цільнозерновий хліб, цукерки та тістечка. Щоб заохотити продажі, директор оголосив про премії, що базуються на кількості проданої продукції протягом тижня, за бальною системою: кожна буханка хліба (<code>b</code>) коштує 1 бал, кожна пачка цукерок (<code>s</code>) коштує 2 бали, а кожен торт (<code>c</code>) - 3 бали. Залежно від загальної кількості набраних балів, працівники можуть отримати різну винагороду. Завдання полягає в тому, щоб створити програму, яка визначає, яку винагороду отримають працівники в залежності від кількості кожного проданого продукту.
+</p>
+
+<p style="text-align: justify;">
+    Якщо сума балів за всі продані за тиждень товари дорівнює або перевищує 150, кожен працівник отримує в якості призу торт (<code>"C"</code>); в іншому випадку, якщо сума балів більше або дорівнює 120, кожен працівник отримує в якості призу набір цукерок (<code>"S"</code>); в іншому випадку, якщо сума балів більше або дорівнює 100, кожен працівник отримує в якості призу буханку хліба (<code>"B"</code>). Якщо сума балів менша за 100, працівники не отримують жодної винагороди (<code>"N"</code>).
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bakery-sales.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Задача полягає у створенні програми, яка визначає, яку винагороду отримають працівники в залежності від кількості проданого продукту.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Три цілих числа <span>({% if is_js %}number{% else %}int{% endif %})</span> що представляють, відповідно, кількість проданих за тиждень хлібів, цукерок та тістечок.
+</p>
+
+<p>
+   <strong>Виведіть:</strong> Рядок <span>(str{% if is_js %}ing{% endif %})</span> що містить символ, який представляє приз. 
+</p>
+
+<p>
+    <strong>Пояснення:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
