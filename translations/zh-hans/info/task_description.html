@@ -1,0 +1,49 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    一家面包店销售全麦面包、糖果和蛋糕。为了鼓励销售，店长宣布根据一周内售出的产品数量进行奖励，采用积分制：每块面包 (<code>b</code>) 得 1 分，每包糖果 (<code>s</code>) 得 2 分，每个蛋糕 (<code>c</code>) 得 3 分。根据累积的总积分，员工可以获得不同的奖励。挑战在于创建一个程序，根据每种产品的销售数量来决定员工将获得的奖励。
+</p>
+
+<p style="text-align: justify;">
+    如果本周售出的所有产品的积分之和等于或大于 150，则每位员工可获得一个蛋糕 (<code>"C"</code>) 作为奖励；否则，如果积分之和大于或等于 120，则每位员工可获得一个糖果包 (<code>"S"</code>) 作为奖励；否则，如果积分之和大于或等于 100，则每位员工可获得一个面包 (<code>"B"</code>) 作为奖励。如果积分之和小于 100，则员工没有任何奖励 (<code>"N"</code>)。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bakery-sales.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    我们面临的挑战是创建一个程序，根据每种产品的销售数量来决定员工将获得哪种奖励。
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>分别代表一周内售出的面包、糖果包和蛋糕的数量。
+</p>
+
+<p>
+   <strong>输出： 字符串</strong>字符串 <span>(str{% if is_js %}ing{% endif %})</span>包含一个代表奖品的字符。 
+</p>
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
